@@ -49,12 +49,33 @@
       multiple print_r
     </div>
 
-    <p>Multiple print_r using pre tag</p><h2>Install</h2>
+    <p>Multiple print_r using pre tag</p>
+<h2>A simple function</h2>
+<p>
+<?php
+
+function pra(){
+     $numargs = func_num_args();
+     if ($numargs > 0) {
+         $arg_list = func_get_args();
+         foreach($arg_list as $arg) {
+                echo "<pre>";
+                print_r($arg);
+                echo "</pre>";
+         }
+     }
+}
+?>
+</p>
+<h2>How to use</h2>
 <p>pra($var1, $var2, ..., $varN);</p>
 <h2>Authors</h2>
-<p>Lautaro (orazile@gmail.com)<br/><br/>      </p>
+<p>Lautaro (orazile@gmail.com)
+<br/>
+<br/>      </p>
 <h2>Contact</h2>
-<p>Lautaro (orazile@gmail.com)<br/>      </p>
+<p>Lautaro (orazile@gmail.com)
+<br/>      </p>
 
 
     <h2>Download</h2>
