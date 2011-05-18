@@ -12,5 +12,4 @@ function pra(){
 }
 
 pra($var1, $var2,....);
-
 ```
