@@ -1,3 +1,5 @@
+# Print_r All
+
 ```php
 function pra(){
      $numargs = func_num_args();
@@ -10,6 +12,7 @@ function pra(){
          }
      }   
 }
+
 pra($var1, $var2,....);
 
 ```
